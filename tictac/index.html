@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url("https://wallpapers.com/images/featured/game-background-u6f6dcl3a81lre7c.webp");
+        background-repeat: no-repeat;
+        background-size: 1350px 690px;
+        /* animation: change;
+        animation-duration: 1s; */
+    }
+
+    .focus {
+        background-image: linear-gradient(to bottom right, red, rgb(255, 136, 0), rgb(255, 204, 0));
+        position: absolute;
+        /* text-align: center; */
+        height: 25%;
+        width: 47.9%;
+        margin-top: 16.5%;
+        margin-left: 26.1%;
+        border: 4px solid rgb(240, 234, 234);
+        /* height: 28.5%;
+        width: 49.9%;
+        margin-top: 15.5%;
+        margin-left: 25.1%; */
+        border-radius: 10px;
+        animation-name: anime;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes anime {
+        0% {
+            height: 25%;
+            background-image: linear-gradient(to bottom right, red, rgb(255, 136, 0), rgb(255, 204, 0));
+            width: 47.9%;
+            margin-top: 16.5%;
+            margin-left: 26.1%;
+        }
+
+        25% {
+            height: 28.5%;
+            background-image: linear-gradient(to bottom right, rgb(255, 136, 0), red, rgb(255, 204, 0));
+            width: 49.9%;
+            margin-top: 15.5%;
+            margin-left: 25.1%;
+            border-radius: 10px;
+        }
+
+        50% {
+            height: 25%;
+            width: 47.9%;
+            background-image: linear-gradient(to bottom right, red, rgb(255, 204, 0), rgb(255, 136, 0));
+            margin-top: 16.5%;
+            margin-left: 26.1%;
+        }
+
+        75% {
+            height: 28.5%;
+            width: 49.9%;
+            background-image: linear-gradient(to bottom right, rgb(255, 204, 0), rgb(255, 136, 0), red);
+            margin-top: 15.5%;
+            margin-left: 25.1%;
+            border-radius: 10px;
+        }
+    }
+
+    .play {
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 43%;
+        /* margin-top: 17.2%;
+        margin-left: 42%; */
+        animation-name: button;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate-reverse; */
+
+    }
+
+    .play:hover {
+        height: 120px;
+        width: 120px;
+    }
+
+    @keyframes button {
+        0% {
+            /* height: auto;
+            width: auto; */
+            margin-top: 18%;
+            margin-left: 43%;
+        }
+
+        25% {
+            /* height: 150px; */
+            margin-top: 18.759%;
+            margin-left: 43.55%;
+            /* width: 150px; */
+        }
+
+        50% {
+            /* height: auto;
+            width: auto; */
+            margin-top: 18%;
+            margin-left: 43%;
+        }
+
+        75% {
+            /* height: 150px; */
+            margin-top: 18.759%;
+            margin-left: 43.55%;
+            /* width: 150px; */
+        }
+    }
+
+    .new {
+        position: absolute;
+        margin-top: 18.759%;
+        margin-left: 43.55%;
+        /* margin-left: 43%; */
+    }
+
+    .tic {
+        position: absolute;
+        font-size: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(96, 24, 13, 0.807);
+        transform: rotate(-17deg);
+        text-shadow: 10px 5px 2px rgb(230, 151, 151);
+        animation: vib;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    .tic:hover {
+        color: rgba(175, 59, 41, 0.807);
+        cursor: pointer;
+        animation: vib;
+        animation-duration: 0.05s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes vib {
+        from {
+            transform: rotate(-20deg);
+        }
+
+        to {
+            transform: rotate(-12deg);
+        }
+    }
+
+    .tack {
+        position: absolute;
+        margin-left: 250px;
+        font-size: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(85, 90, 8);
+        transform: rotate(17deg);
+        text-shadow: 12px 6px 2px rgb(243, 246, 204);
+        animation: vibtc;
+        animation-duration: 0.2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+
+    }
+
+    .tack:hover {
+        color: rgb(65, 67, 28);
+        animation: vibtc;
+        animation-duration: 0.6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes vibtc {
+        from {
+            transform: rotate(-10deg);
+        }
+
+        to {
+            transform: rotate(10deg);
+        }
+    }
+
+    .toe {
+        position: absolute;
+        margin-left: 550px;
+        font-size: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(9, 73, 4);
+        transform: rotate(-30deg);
+        text-shadow: 10px 5px 2px rgb(73, 107, 71);
+        animation: vibtoe;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+
+    }
+
+    .toe:hover {
+        color: rgb(25, 85, 20);
+        animation: vibtoe;
+        animation-duration: 0.08s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes vibtoe {
+        from {
+            transform: rotate(-40deg);
+        }
+
+        to {
+            transform: rotate(-10deg);
+        }
+    }
+
+    .marg {
+        position: absolute;
+        margin: 5.7% 20%;
+    }
+
+    @keyframes change {
+        from {
+            background-image: radial-gradient(blue, white, red);
+        }
+
+        to {
+            background-image: radial-gradient(red, white, blue);
+        }
+
+    }
+
+    #show1 {
+        position: absolute;
+        margin-top: -145px;
+        margin-left: 23%;
+        border: 6px ridge rgb(7, 28, 79);
+        border-radius: 50%;
+
+    }
+
+    #show2 {
+        position: absolute;
+        margin-top: -145px;
+        margin-left: 46%;
+        border: 6px ridge rgb(7, 28, 79);
+        border-radius: 50%;
+    }
+
+    #show3 {
+        position: absolute;
+        margin-top: -145px;
+        margin-left: 68%;
+        border: 6px ridge rgb(7, 28, 79);
+        border-radius: 50%;
+    }
+
+    #adi {
+        margin-top: 9%;
+        margin-left: 25%;
+        position: absolute;
+        color: blue;
+    }
+
+    #lastt {
+        background-color: rgb(96, 74, 8);
+        height: 55px;
+        position: absolute;
+        width: 180px;
+        padding: 10px;
+        margin-left: 11%;
+        margin-top: 1%;
+        border: 6px solid rgb(88, 8, 8);
+        border-radius: 30px;
+        opacity: 0.4;
+    }
+
+    #lastt:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div id="lastt">
+        <label style="position: absolute;" for="adi"><img style="height: 50px; width: 50px; margin-top: 2%;"
+                src="https://cdn-icons-png.flaticon.com/128/10811/10811659.png" alt=""></label>
+        <input type="range" min="0" max="100" id="adi" value="40" onclick="loud()">
+    </div>
+    <audio id="vol" src="Powerful-Trap-.mp3" controls autoplay loop
+        style="margin: 25% 40%; position: absolute;"></audio>
+    <audio id="ent" src="click1.wav" style="visibility: hidden; position: absolute;" controls></audio>
+    </audio>
+    <span class="marg"><span class="tic">TIC</span><span class="tack">TAC</span><span class="toe">TOE</span></span>
+    <div class="focus"></div>
+    <a href="tic.html" id="addr" onclick="trav()"><img class="play"
+            src="https://cdn-icons-png.flaticon.com/128/8109/8109775.png" alt=""></a>
+    <!-- <img class="new" src="https://cdn-icons-png.flaticon.com/128/986/986894.png" alt=""> -->
+
+    <img src="https://cdn-icons-png.flaticon.com/128/3193/3193689.png" alt=""><br>
+    <img src="https://cdn-icons-png.flaticon.com/128/1713/1713752.png" alt=""><br>
+    <img src="https://cdn-icons-png.flaticon.com/128/3193/3193689.png" alt=""><br>
+    <img src="https://cdn-icons-png.flaticon.com/128/1713/1713752.png" alt=""><br>
+    <img src="https://cdn-icons-png.flaticon.com/128/3193/3193689.png" alt=""><br>
+    <div style="position: relative; margin-left: 88%; margin-top: -660px;">
+        <img src="https://cdn-icons-png.flaticon.com/128/3193/3193689.png" alt=""><br>
+        <img src="https://cdn-icons-png.flaticon.com/128/1713/1713752.png" alt=""><br>
+        <img src="https://cdn-icons-png.flaticon.com/128/3193/3193689.png" alt=""><br>
+        <img src="https://cdn-icons-png.flaticon.com/128/1713/1713752.png" alt=""><br>
+        <img src="https://cdn-icons-png.flaticon.com/128/3193/3193689.png" alt=""><br>
+    </div>
+    <img id="show1" src="https://cdn-icons-png.flaticon.com/128/2108/2108036.png" alt="">
+    <img id="show2" src="https://cdn-icons-png.flaticon.com/128/4511/4511930.png" alt="">
+    <img id="show3" src="https://cdn-icons-png.flaticon.com/128/7921/7921503.png" alt="">
+    <script>
+
+
+
+
+        function loud() {
+            var it = document.getElementById("adi").value;
+            var n = it * 0.01;
+            document.getElementById("vol").volume = n;
+        }
+
+
+        setInterval(() => {
+            document.getElementById("show1").src = "https://cdn-icons-png.flaticon.com/128/4511/4511930.png";
+        }, 1000);
+        setInterval(() => {
+            document.getElementById("show1").src = "https://cdn-icons-png.flaticon.com/128/7921/7921503.png";
+        }, 2000);
+        setInterval(() => {
+            document.getElementById("show1").src = "https://cdn-icons-png.flaticon.com/128/564/564166.png";
+        }, 3000);
+        setInterval(() => {
+            document.getElementById("show1").src = "https://cdn-icons-png.flaticon.com/128/952/952852.png";
+        }, 4000);
+        setInterval(() => {
+            document.getElementById("show1").src = "https://cdn-icons-png.flaticon.com/128/2108/2108036.png";
+        }, 5000);
+
+
+        setInterval(() => {
+            document.getElementById("show2").src = "https://cdn-icons-png.flaticon.com/128/7921/7921503.png";
+        }, 1000);
+        setInterval(() => {
+            document.getElementById("show2").src = "https://cdn-icons-png.flaticon.com/128/564/564166.png";
+        }, 2000);
+        setInterval(() => {
+            document.getElementById("show2").src = "https://cdn-icons-png.flaticon.com/128/952/952852.png";
+        }, 3000);
+        setInterval(() => {
+            document.getElementById("show2").src = "https://cdn-icons-png.flaticon.com/128/2108/2108036.png";
+        }, 4000);
+        setInterval(() => {
+            document.getElementById("show2").src = "https://cdn-icons-png.flaticon.com/128/4511/4511930.png";
+        }, 5000);
+
+
+
+        setInterval(() => {
+            document.getElementById("show3").src = "https://cdn-icons-png.flaticon.com/128/564/564166.png";
+        }, 1000);
+        setInterval(() => {
+            document.getElementById("show3").src = "https://cdn-icons-png.flaticon.com/128/952/952852.png";
+        }, 2000);
+        setInterval(() => {
+            document.getElementById("show3").src = "https://cdn-icons-png.flaticon.com/128/2108/2108036.png";
+        }, 3000);
+        setInterval(() => {
+            document.getElementById("show3").src = "https://cdn-icons-png.flaticon.com/128/4511/4511930.png";
+        }, 4000);
+        setInterval(() => {
+            document.getElementById("show3").src = "https://cdn-icons-png.flaticon.com/128/7921/7921503.png";
+        }, 5000);
+
+        function done() {
+            document.getElementById("ent").play();
+            document.getElementById("ent").playbackRate = 2.0;
+            setTimeout(() => {
+                document.getElementById("addr").setAttribute("href", "tic.html");
+            }, 1);
+
+        }
+    </script>
+</body>
+
+</html>
